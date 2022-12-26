@@ -1,0 +1,95 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(70, 5, 122);
+}
+
+.form-contain{
+  display: grid;
+  place-content: center;
+  margin-top: 20px;
+}
+.title-contact{
+  font-size: 28px;
+  color: aliceblue;
+  font-weight: 500;
+}
+.form{
+  width: 420px;
+  position: relative;
+  background-color: aliceblue;
+  min-height: 550px;
+  max-height: 920px;
+  padding: 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+input,textarea{
+  margin-bottom: 12px;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid rgb(134, 134, 134);
+  background-color: transparent;
+}
+textarea{
+  max-height: 80px;
+}
+.buttons{
+ position: absolute;
+ width: 90%;
+ bottom: 10px;
+ display: flex;
+ justify-content: space-around;
+
+}
+
+.buttons button{
+  padding: 5px 40px;
+  color: aliceblue;
+  border: none;
+  border-radius: 7px;
+}
+
+.buttons button:hover{
+  background-color: blueviolet;
+}
+.send{
+  background-color: brown;
+}
+.reset{
+  background-color: rgb(24, 20, 20);
+}
+.box-form{
+  display: contents;
+}
+.spinner-border {
+  display: none;
+  align-self: center;
+  
+}
+.text-alert{
+  padding: 5px 40px;
+  color: red;
+  text-align: center;
+}
+.text-good{
+  text-align: center;
+  color: green;
+}
+@media (max-width:420px){
+  .form{
+    width:310px;
+    height: fit-content;
+  }
+  .text-alert{
+    padding: 0px;
+    font-size: 14px;
+  }
+
+}
